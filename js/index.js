@@ -2,86 +2,121 @@ const tl = gsap.timeline();
 const pizzas = [
   {
     id: 0,
-    name: "Бургер-пицца",
-    price: 445,
+    name: "Сет жара",
+    price: 2999,
     imgUrl:
-      "https://dodopizza-a.akamaihd.net/static/Img/Products/c84a4190f97d4364ad2b614bd0d26297_366x366.webp",
+      "https://sushivesla.kg/assets/images/products/75/small/thumb-114-goods-photo-big-removebg-preview.png",
     counter: 0,
-    category: "Закрытые",
+    category: "Сет",
   },
   {
     id: 1,
-    name: "Цыпленок карри",
-    price: 475,
+    name: "Сет Хит запеченный 2.0",
+    price: 1299,
     imgUrl:
-      "https://dodopizza-a.akamaihd.net/static/Img/Products/f88f70774bdc4a198379c2f53b42f48f_366x366.webp",
+      "https://sushivesla.kg/assets/images/products/21/small/5cdad0edaa6bd.png",
     counter: 0,
-    category: "Гриль",
+    category: "Сет",
   },
   {
     id: 2,
-    name: "Сырная",
-    price: 295,
+    name: "Сет Филадельфия",
+    price: 1049,
     imgUrl:
-      "https://dodopizza-a.akamaihd.net/static/Img/Products/e2393e247dc64ecbbf23c82243c0a399_366x366.webp",
+      "https://sushivesla.kg/assets/images/products/22/small/thumb-234-goods-photo-big-removebg-preview.png",
     counter: 0,
-    category: "Вегетарианская",
+    category: "сет",
   },
   {
     id: 3,
-    name: "Ветчина и сыр",
-    price: 295,
+    name: "Сет Fish MIX",
+    price: 1199,
     imgUrl:
-      "https://dodopizza-a.akamaihd.net/static/Img/Products/3fe12c4bb05c470c9cb45fb423b7c049_366x366.webp",
+      "https://sushivesla.kg/assets/images/products/23/1788065d8bec8185e3cac485a51f8f9b.png",
     counter: 0,
-    category: "Мясные",
+    category: "Сет",
   },
   {
     id: 4,
-    name: "Пепперони Фреш",
-    price: 325,
+    name: "Сет SMILE",
+    price: 700,
     imgUrl:
-      "https://dodopizza-a.akamaihd.net/static/Img/Products/525becd5f6d845ea9f83af0af7e44eea_366x366.webp",
+      "https://sushivesla.kg/assets/images/products/25/thumb-140-goods-photo-big.png",
     counter: 0,
-    category: "Мясные",
+    category: "Сет",
   },
   {
     id: 5,
-    name: "Двойной цыпленок",
-    price: 325,
+    name: "Сет CITY",
+    price: 1549,
     imgUrl:
-      "https://dodopizza-a.akamaihd.net/static/Img/Products/f351d4358f134c31b5bed9093faf38e3_366x366.webp",
+      "https://sushivesla.kg/assets/images/products/28/76742c3da73b045b7543d9935eb6b8ff.png",
     counter: 0,
-    category: "Гриль",
+    category: "Сет",
   },
   {
     id: 6,
-    name: "Ветчина и грибы",
-    price: 445,
+    name: "Африка",
+    price: 1349,
     imgUrl:
-      "https://dodopizza-a.akamaihd.net/static/Img/Products/be07674c38c54fd78f878a33988a4373_366x366.webp",
+      "https://sushivesla.kg/assets/images/products/72/thumb-232-goods-photo-big-removebg-preview.png",
     counter: 0,
-    category: "Мясные",
+    category: "Сет",
   },
   {
     id: 7,
-    name: "Маргарита",
+    name: "L-Box",
+    price: 649,
+    imgUrl:
+      "https://sushivesla.kg/assets/images/products/70/thumb-228-goods-photo-big-removebg-preview.png",
+    counter: 0,
+    category: "Сет",
+  },
+  {
+    id: 8,
+    name: "Лова-Лова",
     price: 445,
     imgUrl:
-      "https://dodopizza-a.akamaihd.net/static/Img/Products/3f19abd29d2a477a960992ec2f30782c_366x366.webp",
+      "https://sushivesla.kg/assets/images/products/71/thumb-230-goods-photo-big-removebg-preview.png",
     counter: 0,
-    category: "Вегетарианская",
+    category: "Сет",
+  },
+  {
+    id: 9,
+    name: "Лосось",
+    price: 100,
+    imgUrl:
+      "https://sushivesla.kg/assets/images/products/32/sushislososem-570x570.png",
+    counter: 0,
+    category: "Суши",
+  },
+  {
+    id: 10,
+    name: "Калифорния с лососем",
+    price: 399,
+    imgUrl:
+      "https://sushivesla.kg/assets/images/products/26/small/thumb-42-goods-photo-big-removebg-preview.png",
+    counter: 0,
+    category: "Роллы",
+  },
+  {
+    id: 10,
+    name: "Липтон",
+    price: 120,
+    imgUrl:
+      "https://sushivesla.kg/assets/images/products/55/small/f55edc53968409a87a49b4e138cfbc81.png",
+    counter: 0,
+    category: "Напитки",
   },
 ];
 const routeToCart = document.querySelector(".button.button--cart");
 const content = document.querySelector(".content");
 const categoriesArray = [
   "Все",
-  "Мясные",
-  "Вегетарианская",
-  "Гриль",
-  "Острые",
-  "Закрытые",
+  "Напитки",
+  "Роллы",
+  "Суши",
+  "Сет",
 ];
 
 const localItems = JSON.parse(localStorage.getItem("cartPizzas"));
@@ -103,7 +138,7 @@ const renderPrices = () => {
   totalSum.innerText =
     cartPizzas.reduce((a, b) => {
       return a + b.counter * b.price;
-    }, 0) + " ₽";
+    }, 0) + "сом";
 };
 
 renderPrices();
@@ -129,19 +164,9 @@ const renderCatalog = (array) => {
                   src="${pizza.imgUrl}"
                   alt="Pizza" />
               <h4 class="pizza-block__title">${pizza.name}</h4>
-              <div class="pizza-block__selector">
-                  <ul class="type">
-                      <li class="active">тонкое</li>
-                      <li>традиционное</li>
-                  </ul>
-                  <ul class="size">
-                      <li class="active">26 см.</li>
-                      <li>30 см.</li>
-                      <li>40 см.</li>
-                  </ul>
-              </div>
+
               <div class="pizza-block__bottom">
-                  <div class="pizza-block__price">от ${pizza.price} ₽</div>
+                  <div class="pizza-block__price">от ${pizza.price} сом</div>
                   <div data-id="${pizza.id}" class="button button--outline button--add">
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -248,7 +273,7 @@ const renderMain = () => {
         </div>
       </div>
     </div>
-    <h2 class="content__title">Все пиццы</h2>
+    <h2 class="content__title">Все</h2>
     <div class="content__items"></div>
   </div>
   `;
@@ -369,10 +394,6 @@ const renderCart = () => {
             src="${items.imgUrl}"
             alt="Pizza" />
         </div>
-        <div class="cart__item-info">
-          <h3>${items.name}</h3>
-          <p>${items.type} тесто, ${items.size}</p>
-        </div>
         <div class="cart__item-count">
           <div data-id="${
             items.id
@@ -403,7 +424,7 @@ const renderCart = () => {
           </div>
         </div>
         <div class="cart__item-price">
-          <b>${items.counter * items.price} ₽</b>
+          <b>${items.counter * items.price} сом</b>
         </div>
         <div class="cart__item-remove">
           <div class="button button--outline button--circle">
@@ -523,7 +544,6 @@ routeToCart.addEventListener("click", async (e) => {
 
       <div class="cart__bottom">
         <div class="cart__bottom-details">
-          <span> Всего пицц: <b>${totalPizzas.innerText} шт.</b> </span>
           <span> Сумма заказа: <b>${totalSum.innerText}</b> </span>
         </div>
         <div class="cart__bottom-buttons">

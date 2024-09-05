@@ -81,9 +81,12 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
+    gap: 30px;
 }
 .header__logo img {
-    margin-right: 15px;
+    border-radius: 50%;
+    width: 100px;
 }
 .header__logo h1 {
     color: #181818;
@@ -97,7 +100,7 @@ a {
 }
 .button {
     display: inline-block;
-    background-color: #fe5f1e;
+    background-color: #d31c1c;
     border-radius: 30px;
     padding: 10px 20px;
     min-width: 100px;
@@ -124,7 +127,7 @@ a {
     transition: all 0.15s ease-in-out;
 }
 .button:hover {
-    background-color: #f24701;
+    background-color: #8f1a1a;
 }
 .button:active {
     background-color: #de4101;
@@ -166,7 +169,7 @@ a {
     fill: #fe5f1e;
 }
 .button--outline:hover {
-    background-color: #fe5f1e;
+    background-color: #d31c1c;
 }
 .button--outline:hover,
 .button--outline:hover span {
@@ -176,7 +179,7 @@ a {
     fill: #fff;
 }
 .button--outline:active {
-    background-color: #f24701;
+    background-color: #d31c1c;
 }
 .button__delimiter {
     width: 1px;
@@ -397,7 +400,7 @@ a {
     letter-spacing: 0.015em;
 }
 body {
-    background-color: #ffdf8c;
+    background-color: #ae3535;
 }
 .wrapper {
     width: calc(100vw - 100px);
